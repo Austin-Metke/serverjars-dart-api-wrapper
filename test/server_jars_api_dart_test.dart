@@ -24,15 +24,12 @@ void main() {
       expect(actual, expected);
     });
 
-    test("Test fetchAll function", () async {
-
-      var expected = <Map<String, dynamic>> [
+    test("Test downloadJar function", () async {
 
 
 
-      ];
-      var actual = await ServerJars.fetchAll(type: 'purpur');
     });
+
 
   });
 
