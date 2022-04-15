@@ -42,5 +42,5 @@ print(subtypes);
 
 **Downloading Jars:**
 ```dart
-await ServerJars.downloadJuar(type: 'purpur', version: '1.13.2', output:'./purpur-1.13.2.jar');
+await ServerJars.downloadJar(type: 'purpur', version: '1.13.2', output:'./purpur-1.13.2.jar');
 ```
