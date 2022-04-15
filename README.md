@@ -11,29 +11,36 @@ and the Flutter guide for
 [developing packages and plugins](https://flutter.dev/developing-packages). 
 -->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+# ServerJars-API
+The unofficial Dart API for ServerJars
 
-## Features
+**Code Examples:**
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
-
-## Usage
-
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
+**Fetching the latest jar:**
 ```dart
-const like = 'sample';
+var latest = await ServerJars.fetchLatest(type: "vanilla");
+print(latest);
 ```
 
-## Additional information
+**Fetching all the Jars:**
+```dart
+var allJars = await ServerJars.fetchAll(type: "paper");
+print(allJars);
+```
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+**Fetching types:**
+```dart
+var types = await ServerJars.fetchTypes();
+print(types);
+```
+
+**Fetching subtypes:
+```dart
+var subtypes = await Serverjars.fetchSubtypes(mainType: 'bedrock');
+print(subtypes);
+```
+
+**Downloading Jars:**
+```dart
+await ServerJars.downloadJuar(type: 'purpur', version: '1.13.2', output:'./purpur-1.13.2.jar');
+```
