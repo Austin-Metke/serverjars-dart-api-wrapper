@@ -34,7 +34,7 @@ var types = await ServerJars.fetchTypes();
 print(types);
 ```
 
-**Fetching subtypes:
+**Fetching subtypes:**
 ```dart
 var subtypes = await Serverjars.fetchSubtypes(mainType: 'bedrock');
 print(subtypes);
